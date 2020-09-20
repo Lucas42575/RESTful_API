@@ -18,12 +18,15 @@ Steps to set up RESTful API:
     - drag Docker to applications folder
     - Double click DMG docker file - Now Docker is on
     
-    - Check version : $ docker --version
-                      $ docker-compose --version
-                      $ docker-machine --version
+    - Check version :
+    
+    	$ docker --version
+        $ docker-compose --version
+        $ docker-machine --version
                       
-3) Clone this repository and spin up the doker container
-
+2) Clone this repository and spin up the doker container
+    As so...
+    
     $ git clone https://gitlab.com/librecube/elements/LC6501.git datastore
     $ cd datastore
     $ docker-compose up 
@@ -31,7 +34,7 @@ Steps to set up RESTful API:
     Now, the database REST API is exposed to http://localhost:6501
     --> modify docker-compose.yml file to change port
     
-    3.1) If you don't have docker
+    2.1) If you don't have docker
     
           $ git clone https://gitlab.com/librecube/elements/LC6501.git datastore
           $ cd datastore
