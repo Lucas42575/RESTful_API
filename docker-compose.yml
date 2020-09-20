@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+    app:
+        build: .
+        command: gunicorn -b 0.0.0.0:8000 app:app
+        ports:
+            - 6501:8000
+        links:
+            - mongo
+        environment:
+            - MONGO_HOST=mongo
+        #volumes:
+        #    - ./application:/app/application
+
+    mongo:
+        image: mongo
+        # expose port only for development purpose
+        ports:
+            - 27017:27017
+        volumes:
+            - data-mongo:/data/db
+
+volumes:
+    data-mongo:
