@@ -7,8 +7,9 @@ Steps to set up RESTful API:
 
 1) Install Docker and docker-compose as well as requirements under requirments.txt
     
-    	Install the following requirements
-      		flask
+    Install the following requirements
+      		
+		flask
 		flask-restful
 	    	pymongo
       
@@ -19,7 +20,7 @@ Steps to set up RESTful API:
    	 	- drag Docker to applications folder
    		- Double click DMG docker file - Now Docker is on
     
-    		- Check version :
+    - Check version :
     
     		$ docker --version
        		$ docker-compose --version
