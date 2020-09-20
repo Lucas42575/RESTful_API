@@ -7,29 +7,29 @@ Steps to set up RESTful API:
 
 1) Install Docker and docker-compose as well as requirements under requirments.txt
     
-    Install the following requirements
-      flask
-	    flask-restful
-	    pymongo
+    	Install the following requirements
+      		flask
+		flask-restful
+	    	pymongo
       
-    Install Docker and docker-compose                    
-    - For Mac OS
-    - Download Docker: https://docs.docker.com/docker-for-mac/install/
-    - drag Docker to applications folder
-    - Double click DMG docker file - Now Docker is on
+    1.1) Install Docker and docker-compose                    
+    		
+		- For Mac OS
+    		- Download Docker: https://docs.docker.com/docker-for-mac/install/
+   	 	- drag Docker to applications folder
+   		- Double click DMG docker file - Now Docker is on
     
-    - Check version :
+    		- Check version :
     
-    	$ docker --version
-        $ docker-compose --version
-        $ docker-machine --version
+    		$ docker --version
+       		$ docker-compose --version
+        	$ docker-machine --version
                       
 2) Clone this repository and spin up the doker container
-    As so...
-    
-    $ git clone https://gitlab.com/librecube/elements/LC6501.git datastore
-    $ cd datastore
-    $ docker-compose up 
+   
+    	$ git clone https://gitlab.com/librecube/elements/LC6501.git datastore
+    	$ cd datastore
+    	$ docker-compose up 
     
     Now, the database REST API is exposed to http://localhost:6501
     --> modify docker-compose.yml file to change port
@@ -59,8 +59,9 @@ Steps to set up RESTful API:
 
 4) Now, gain access to a simple Python3 library for connecting to RESTful databases
 
-  From terminal:
-  $ pip install git+https://gitlab.com/librecube/lib/python-rest-db-client
+  	From terminal:
+  		
+		$ pip install git+https://gitlab.com/librecube/lib/python-rest-db-client
   
   
   4.1) Now you can open a python script or shell while your docker-compose is up to and create a client..
