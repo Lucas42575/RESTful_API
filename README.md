@@ -15,10 +15,11 @@ Steps to set up RESTful API:
       
     1.1) Install Docker and docker-compose                    
     		
-		- For Mac OS
-    		- Download Docker: https://docs.docker.com/docker-for-mac/install/
-   	 	- drag Docker to applications folder
-   		- Double click DMG docker file - Now Docker is on
+	 For Mac OS
+    		
+		 Download Docker: https://docs.docker.com/docker-for-mac/install/
+   	 	 drag Docker to applications folder
+   		 Double click DMG docker file - Now Docker is on
     
     - Check version :
     
